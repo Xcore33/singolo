@@ -55,7 +55,7 @@
 
 .header-navigation,
 .header-navigation-home {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 12px;
   /* transform: scaleY(1.04); */
   line-height: 16px;
@@ -68,6 +68,8 @@
 .header-navigation a,
 .header-navigation-home a {
   position: relative;
+  color: inherit;
+  text-decoration: none;
 }
 
 .header-navigation a::before {
@@ -90,11 +92,7 @@
   color: #f06c64;
 }
 
-.header-navigation a,
-.header-navigation-home a {
-  color: inherit;
-  text-decoration: none;
-}
+/* Slider Block */
 
 .slider-wrapper {
   position: relative;
@@ -215,15 +213,7 @@
   opacity: 0.5;
 }
 
-
-
-
-
-
-
-
-
-
+/* Services Block */
 
 .services-block {
   position: relative;
@@ -243,13 +233,15 @@
   width: 940px;
 }
 
-.services-block h1 {
+.services-block h2 {
   margin-top: 59px;
 
   font-weight: 900;
   font-size: 30px;
+  /* word-spacing: 0px; */
+  text-align: left;
   color: #666d89;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.0055em;
 }
 
 .services-block-text {
@@ -261,14 +253,12 @@
   font-family: "Lato";
   text-align: left;
   color: #767e9e;
-  letter-spacing: 0.008em;
+  letter-spacing: 0.0084em;
 }
 
 .services-block-text span {
   word-spacing: -1px;
 }
-
-
 
 .services-wrapper {
   position: absolute;
@@ -283,28 +273,44 @@
 }
 
 .container-item {
+  box-sizing: border-box;
   width: 300px;
-  margin-bottom: 54px;
+  margin: 0 0 -5px 1px;
+}
+
+.box-item {
+  display: block;
+  float: right;
+  width: 219px;
+  height: 128px;
 }
 
 .item-title {
-  display: inline-block;
-  margin-top: -4px;
-  margin-left: 14px;
+  margin-top: -2px;
+  margin-left: -2px;
 
-  font-weight: 700;
+  font-weight: 900;
   font-size: 18px;
+  line-height: 18px;
   vertical-align: top;
+  text-align: left;
   color: #666d89;
+  letter-spacing: -0.005em;
 }
 
 .item-description {
-  display: block;
-  float: right;
-  margin-top: -36.5px;
-  margin-right: 2px;
+  margin-top: 10px;
+  margin-left: -1px;
 
+  font-weight: 400;
   font-size: 12px;
-  line-height: 21px;
+  line-height: 22px;
+  text-align: justify;
   color: #767e9e;
+  letter-spacing: -0.004em;
+  word-spacing: 0.0px;
+}
+
+.third {
+  margin-left: 0;
 }
