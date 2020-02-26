@@ -6,12 +6,16 @@
 .content-wrapper {
   max-width: 1020px;
   margin: 0 auto;
+  font-family: "Lato", sans-serif;
 }
 
-.header {
-  height: 196px;
+.portfolio {
+  position: relative;
+  height: 864px;
 
   background-color: #2d303a;
+  border-bottom: 6px solid #323746;
+
 }
 
 .header-logo {
@@ -24,18 +28,18 @@
   font-weight: 900;
   font-size: 30px;
   line-height: 18px;
-  font-family: "Lato", sans-serif;
+
   color: #666d89;
   letter-spacing: -0.005em;
 }
 
 .header-logo p {
   padding-top: 27px;
+  padding: 27px 0 10px 0;
 
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
-  font-family: "Lato", sans-serif;
   text-align: left;
   color: #767e9e;
 }
@@ -45,7 +49,6 @@
   display: flex;
   justify-content: space-between;
   width: 289px;
-  padding: 10px 0 0 40px;
 
   list-style-type: none;
 }
@@ -54,7 +57,6 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
-  font-family: "Lato", sans-serif;
   color: #767e9e;
 }
 
@@ -104,7 +106,6 @@
 
   height: 728px;
 
-  font-family: "Lato", sans-serif;
 
   background: #f2f2f2;
   border-bottom: 6px solid white;
@@ -128,7 +129,7 @@
   letter-spacing: -0.0055em;
 } */
 
-.about-wrapper {
+/* .about-wrapper {
   position: absolute;
 
   display: flex;
@@ -138,4 +139,4 @@
   width: 940px;
   margin-top: 220px;
   margin-left: 40px;
-}
+} */
