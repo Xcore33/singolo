@@ -6,16 +6,17 @@
 .content-wrapper {
   max-width: 1020px;
   margin: 0 auto;
+
   font-family: "Lato", sans-serif;
 }
 
 .portfolio {
   position: relative;
+
   height: 864px;
 
   background-color: #2d303a;
   border-bottom: 6px solid #323746;
-
 }
 
 .header-logo {
@@ -28,14 +29,13 @@
   font-weight: 900;
   font-size: 30px;
   line-height: 18px;
-
   color: #666d89;
   letter-spacing: -0.005em;
 }
 
 .header-logo p {
-  padding-top: 27px;
   padding: 27px 0 10px 0;
+  padding-top: 27px;
 
   font-weight: 300;
   font-size: 18px;
@@ -77,27 +77,36 @@
 
 .header-navigation a:hover,
 .header-navigation-home a:hover {
-  position: static;
-
   color: #dedede;
+
   border-color: #c5c5c5;
 }
 
-/* Images Block */
+/* Project Block */
 
 .images-wrapper {
-  position: relative;
+  position: absolute;
 }
 
-.images-container {
-  width: 1020px;
-  height: 668px;
-  padding: 0 40px auto 40px;
+.project {
+  display: grid;
+  width: 940px;
+  height: 601px;
+  margin: 0 auto;
+  padding: 18px 0 0 40px;
+  overflow: hidden;
 
-  background-color: #2d303a;
-  border-bottom: 6px solid #323746;
+  grid-auto-rows: 207px;
+  grid-template-columns: repeat(4, 240px);
 }
 
+.project-images:hover {
+  position: static;
+
+  color: #dedede;
+
+  border-color: #c5c5c5;
+}
 
 /* About Block */
 
@@ -105,7 +114,6 @@
   position: relative;
 
   height: 728px;
-
 
   background: #f2f2f2;
   border-bottom: 6px solid white;
