@@ -113,38 +113,94 @@
 .about-container {
   position: relative;
 
+  max-width: 1020px;
   height: 728px;
 
   background: #f2f2f2;
   border-bottom: 6px solid white;
 }
 
-/* .container-services-title {
-  position: absolute;
-  left: 40px;
-
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
   width: 940px;
-} */
+  padding: 68px 0 0 40px;
+}
 
-/* .services-block h2 {
-  margin-top: 59px;
-
+.about-wrapper h2 {
   font-weight: 900;
   font-size: 30px;
-  word-spacing: 0px;
+  line-height: 18px;
   text-align: left;
   color: #666d89;
-  letter-spacing: -0.0055em;
-} */
+  letter-spacing: -0.005em;
+}
+.about-wrapper p {
+  justify-content: space-between;
+  margin-top: 27px;
 
-/* .about-wrapper {
-  position: absolute;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  color: #767e9e;
+  letter-spacing: 0.0009em;
+  word-spacing: 1px;
+}
+.about-wrapper span {
+  word-spacing: -0.1px;
+}
+
+.about-contacts-wrapper {
+  width: 940px;
+  padding: 18px 40px 0 40px;
+}
+
+.about-contacts {
+  position: relative;
 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 940px;
-  margin-top: 220px;
-  margin-left: 40px;
-} */
+}
+
+.about-1,
+.about-2,
+.about-3 {
+max-width: 300px;
+}
+
+a.sb.facebook {
+  background-image: url(./assets/img/Facebook.png);
+}
+
+.sb.google {
+  background-image: url(./assets/img/google.png);
+}
+.sb.twitter {
+  background-image: url(./assets/img/twitter.png);
+}
+
+.sb.linkedin {
+  background-image: url(./assets/img/LinkedIn.png);
+}
+
+.sb:hover {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+#sb-link {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+
+#sb-link span {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
