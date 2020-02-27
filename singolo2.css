@@ -191,14 +191,14 @@ a.sb.facebook {
   opacity: 0.5;
 }
 
-#sb-link {
+.sb {
   position: relative;
   display: inline-block;
   width: 32px;
   height: 32px;
 }
 
-#sb-link span {
+.sb span {
   display: block;
   width: 0;
   height: 0;
