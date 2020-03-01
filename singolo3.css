@@ -239,7 +239,7 @@ letter-spacing: -0.005em;
   letter-spacing: -0.005em;
 }
 
-.form-main span {
+.form-main p span {
   padding-top: 0.5px;
   line-height: 22.5px;
   letter-spacing: -0.001em;
@@ -263,8 +263,33 @@ letter-spacing: -0.005em;
 color: #2d303a;
 }
 
-.list-main-contacts span {
-padding-left: 20px;
+.ico-text {
+padding-left: 22px;
+}
+
+.ico {
+  display: inline-block;
+}
+
+.ico-location {
+  background-image: url("./assets/img/slocation.png");
+  width: 11px;
+  height: 11px;
+  background-repeat: no-repeat;
+}
+
+.ico-phone {
+  background-image: url("./assets/img/sphone.png");
+  width: 11px;
+  height: 11px;
+  background-repeat: no-repeat;
+}
+
+.ico-mail {
+  background-image: url("./assets/img/smail.png");
+  width: 11px;
+  height: 11px;
+  background-repeat: no-repeat;
 }
 
 
