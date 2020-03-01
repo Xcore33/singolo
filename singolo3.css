@@ -124,6 +124,8 @@ footer .sb:hover {
   padding-right: 35px;
 }
 
+/* Form section */
+
 .form-wrapper {
   position: absolute;
 
@@ -133,13 +135,10 @@ footer .sb:hover {
   padding: 34px 0 0 40px;
 }
 
-.form-container-contacts {
-margin-left: 10px;
-}
-
-
 .form-container {
   width: 619px;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
 input,
@@ -168,6 +167,11 @@ textarea::placeholder {
   letter-spacing: -0.014em;
   transform: scaleY(0.95);
   word-spacing: -0.2px;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+opacity: 0;
 }
 
 #describe-area::placeholder {
@@ -208,3 +212,59 @@ textarea {
 .form-container textarea {
   resize: none;
 }
+
+.form-container-contacts {
+width: 321px;
+color: #f0d8d9;
+/* padding: 0 21px 0 20px; */
+padding-left: 21px;
+
+}
+
+.form-main h4 {
+font-size: 18px;
+line-height: 18px;
+font-weight: 900;
+text-align: left;
+letter-spacing: -0.005em;
+}
+
+.form-main p {
+  padding-top: 10px;
+  width: 300px;
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: justify;
+  letter-spacing: -0.005em;
+}
+
+.form-main span {
+  padding-top: 0.5px;
+  line-height: 22.5px;
+  letter-spacing: -0.001em;
+}
+
+.list-main-contacts {
+  padding-top: 21px;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 400;
+  list-style-type: none;
+  position: absolute;
+}
+
+.list-main-contacts a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list-main-contacts a:hover {
+color: #2d303a;
+}
+
+.list-main-contacts span {
+padding-left: 20px;
+}
+
+
