@@ -136,16 +136,17 @@ footer .sb:hover {
 }
 
 .form-container {
-  width: 619px;
-  flex-shrink: 0;
   flex-grow: 0;
+  flex-shrink: 0;
+  width: 619px;
 }
 
 input,
 textarea {
   width: 100%;
-  height: 38px;
+  height: 37px;
   margin-bottom: 16px;
+  padding-bottom: 1px;
 
   background-color: #d6564f;
   border: none;
@@ -154,40 +155,39 @@ textarea {
 }
 
 #describe-area {
-  height: 202px;
+  height: 201px;
 }
 
 input::placeholder,
 textarea::placeholder {
   padding-left: 14px;
+
   font-weight: 400;
   font-size: 12px;
-  text-align: left;
   color: #f48c8f;
-  letter-spacing: -0.014em;
-  transform: scaleY(0.95);
-  word-spacing: -0.2px;
+  letter-spacing: -0.005em;
 }
 
 input:focus::placeholder,
 textarea:focus::placeholder {
-opacity: 0;
+  opacity: 0;
 }
 
 #describe-area::placeholder {
-  transform: scaleY(1);
-  padding-top: 1px;
-  letter-spacing: -0.07em;
-  word-spacing: -2px;
+  padding-top: 10px;
+
+  word-spacing: 0.5px;
 }
 
+#describe-form input::placeholder {
+  word-spacing: 1px;
+}
 
 input,
 textarea {
   font-weight: 400;
   font-size: 12px;
-  line-height: 22px;
-  text-align: left;
+  font-family: "Lato", sans-serif;
   color: #f0d8d9;
 }
 
@@ -213,58 +213,58 @@ textarea {
   resize: none;
 }
 
-.form-container-contacts {
-width: 321px;
-color: #f0d8d9;
-/* padding: 0 21px 0 20px; */
-padding-left: 21px;
+/* Contacts information block */
 
+.form-container-contacts {
+  width: 321px;
+  padding-left: 21px;
+
+  color: #f0d8d9;
 }
 
 .form-main h4 {
-font-size: 18px;
-line-height: 18px;
-font-weight: 900;
-text-align: left;
-letter-spacing: -0.005em;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: left;
+  letter-spacing: -0.005em;
 }
 
 .form-main p {
-  padding-top: 10px;
   width: 300px;
+  padding-top: 10px;
+
+  font-weight: 400;
   font-size: 12px;
   line-height: 21px;
-  font-weight: 400;
   text-align: justify;
   letter-spacing: -0.005em;
 }
 
 .form-main p span {
   padding-top: 0.5px;
+
   line-height: 22.5px;
   letter-spacing: -0.001em;
 }
 
 .list-main-contacts {
-  padding-top: 21px;
-  font-size: 12px;
-  line-height: 22px;
-  font-weight: 400;
-  list-style-type: none;
   position: absolute;
+
+  padding-top: 25px;
+
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 12px;
 }
 
 .list-main-contacts a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 .list-main-contacts a:hover {
-color: #2d303a;
-}
-
-.ico-text {
-padding-left: 22px;
+  color: #2d303a;
 }
 
 .ico {
@@ -272,24 +272,35 @@ padding-left: 22px;
 }
 
 .ico-location {
-  background-image: url("./assets/img/slocation.png");
-  width: 11px;
+  width: 7px;
   height: 11px;
+  margin: 0 10.5px 0 3px;
+
+  background-image: url("./assets/img/slocation.png");
   background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .ico-phone {
-  background-image: url("./assets/img/sphone.png");
   width: 11px;
   height: 11px;
+  margin: 7px 8.5px 0 1px;
+
+  background-image: url("./assets/img/sphone.png");
   background-repeat: no-repeat;
 }
 
 .ico-mail {
+  width: 13px;
+  height: 8px;
+  margin: 11px 7.5px 0 0;
+
   background-image: url("./assets/img/smail.png");
-  width: 11px;
-  height: 11px;
   background-repeat: no-repeat;
 }
 
-
+.text-location,
+.text-phone,
+.text-mail {
+  vertical-align: 1px;
+}
