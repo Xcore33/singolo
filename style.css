@@ -303,9 +303,11 @@ body {
 }
 
 .item-description {
+  max-height: 90px;
   margin-top: 10px;
   margin-left: -1px;
   padding-right: 1px;
+  overflow: hidden;
 
   font-weight: 400;
   font-size: 12px;
