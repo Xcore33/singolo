@@ -452,19 +452,13 @@ body {
   letter-spacing: -0.005em;
 }
 .about-wrapper p {
-  justify-content: space-between;
   margin-top: 27px;
 
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
-  text-align: left;
+  text-align: justify;
   color: #767e9e;
-  letter-spacing: 0.0009em;
-  word-spacing: 1px;
-}
-.about-wrapper span {
-  word-spacing: -0.1px;
 }
 
 .about-contacts-wrapper {
@@ -859,4 +853,16 @@ footer .sb:hover {
 #home a:hover,
 .portfolio-menu li:first-child a:hover {
   cursor: no-drop;
+}
+
+/* Form validation */
+
+.input-form-1:valid:focus,
+.input-form-2:valid:focus {
+  background-color: rgb(34, 100, 63);
+}
+
+.input-form-1:invalid:focus,
+.input-form-2:invalid:focus {
+  background-color: red;
 }

@@ -242,7 +242,7 @@
           <form id="describe-form" action="mailto:ASK_BY@EPAM.COM" method="post" enctype="text/plain">
             <div class="form-4-row">
               <input class="input-form-1" id="input-1-area" type="text" name="name" placeholder="Name (Required)"
-                required>
+                required pattern="^[A-Za-zА-Яа-яЁё\s]+$">
               <input class="input-form-2" type="email" name="mail" placeholder="Email (Required)" required>
               <input class="input-form-3" type="text" name="subject" placeholder="Subject">
               <textarea class="describe-form" id="describe-area" form="describe-form"

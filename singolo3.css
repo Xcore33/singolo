@@ -213,6 +213,16 @@ textarea {
   resize: none;
 }
 
+.input-form-1:valid:focus,
+.input-form-2:valid:focus {
+  background-color: rgb(34, 100, 63);
+}
+
+.input-form-1:invalid:focus,
+.input-form-2:invalid:focus {
+  background-color: red;
+}
+
 /* Contacts information block */
 
 .form-container-contacts {
