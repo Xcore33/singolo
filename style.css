@@ -655,7 +655,9 @@ textarea::placeholder {
 }
 
 input:focus::placeholder,
-textarea:focus::placeholder {
+textarea:focus::placeholder,
+input:hover::placeholder,
+textarea:hover::placeholder {
   opacity: 0;
 }
 
@@ -850,6 +852,7 @@ footer .sb:hover {
 #home a:hover,
 .portfolio-menu li:first-child a:hover {
   cursor: no-drop;
+  opacity: 0.6;
 }
 
 /* Form validation */
@@ -861,5 +864,5 @@ footer .sb:hover {
 
 .input-form-1:invalid:focus,
 .input-form-2:invalid:focus {
-  background-color: red;
+  background-color: brown;
 }
