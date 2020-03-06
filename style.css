@@ -843,3 +843,20 @@ footer .sb:hover {
 #footer-sb-twitter {
   margin-right: 4px;
 }
+
+/* Pseudo focus-functtion */
+
+.header-menu li:first-child {
+  color: #f06c64;
+}
+
+.portfolio-menu li:first-child a {
+  color: #dedede;
+
+  border-color: #c5c5c5;
+}
+
+#home a:hover,
+.portfolio-menu li:first-child a:hover {
+  cursor: no-drop;
+}
