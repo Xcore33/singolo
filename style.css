@@ -649,7 +649,7 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-  padding-left: 14px;
+  padding-left: 15px;
 
   font-weight: 400;
   font-size: 12px;
