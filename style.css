@@ -21,14 +21,10 @@ body {
   border-bottom: 6px solid #323746;
 }
 
-.header-logo {
-  padding: 34px 0 0 40px;
-}
-
-.header-logo h1 {
+.header h1 {
   position: relative;
 
-  margin-left: -2.5px;
+  padding: 34px 0 0 38px;
 
   font-weight: 700;
   font-size: 25px;
@@ -41,10 +37,9 @@ body {
   transform: scaleX(0.95);
 }
 
-.header-logo h1::after {
+.header h1::after {
   content: "*";
   position: absolute;
-  top: 0;
   right: -10px;
 
   font-weight: 400;
@@ -54,12 +49,14 @@ body {
 }
 
 .header-menu {
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-  max-width: 371px;
-  margin-right: 40px;
+  width: 411px;
   padding-top: 42px;
+}
+
+.header-menu ul {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40px;
 
   list-style-type: none;
 }
