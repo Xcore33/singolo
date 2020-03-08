@@ -634,20 +634,28 @@ textarea {
   margin-bottom: 16px;
   padding-bottom: 1px;
 
+  font-weight: 400;
+  font-size: 12px;
+  font-family: "Lato", sans-serif;
+  color: #f0d8d9;
+  text-indent: 15px;
+
   background-color: #d6564f;
   border: none;
   border-radius: 5px;
   outline: none;
 }
 
+textarea {
+  padding-top: 10px;
+}
+
 #describe-area {
-  height: 201px;
+  height: 191px;
 }
 
 input::placeholder,
 textarea::placeholder {
-  padding-left: 15px;
-
   font-weight: 400;
   font-size: 12px;
   color: #f48c8f;
@@ -662,21 +670,11 @@ textarea:hover::placeholder {
 }
 
 #describe-area::placeholder {
-  padding-top: 10px;
-
   word-spacing: 0.5px;
 }
 
 #describe-form input::placeholder {
   word-spacing: 1px;
-}
-
-input,
-textarea {
-  font-weight: 400;
-  font-size: 12px;
-  font-family: "Lato", sans-serif;
-  color: #f0d8d9;
 }
 
 .form-container button {
