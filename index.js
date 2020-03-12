@@ -16,3 +16,26 @@ IMAGES.addEventListener('click', (event) => {
   IMAGES.querySelectorAll('img').forEach(el => el.classList.remove('image-active'));
   event.target.classList.add('image-active');
 })
+
+//power off for phones
+var visible = true;
+
+function showFun1() {
+  if(visible) {
+      document.getElementById('display-1').style.visibility = 'hidden';
+      visible = false;
+  } else {
+      document.getElementById('display-1').style.visibility = 'visible';
+      visible = true;
+  }
+}
+
+function showFun2() {
+if(visible) {
+    document.getElementById('display-2').style.visibility = 'hidden';
+    visible = false;
+} else {
+    document.getElementById('display-2').style.visibility = 'visible';
+    visible = true;
+}
+}
