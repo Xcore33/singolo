@@ -24,27 +24,32 @@
         </ul>
       </nav>
     </header>
-    <div class="slider">
+    <div class="slider" id="slider-picture-box">
+      <div class="slider-left-button" id="left-button">
+        <img src="./assets/img/left.png" alt="Left Button" width="16" height="27">
+      </div>
       <div class="slider-wrapper" id="phones">
-        <div class="slider-vertical-image" onclick="showFun1()">
-          <div class="vertical-body"></div>
-          <div class="vertical-image" id="display-1"></div>
-          <div class="vertical-shadow"></div>
-        </div>
-        <div class="slider-horizontal-image" onclick="showFun2()">
-          <div class="transform-image">
-            <div class="horizontal-body">
-              <div class="horizontal-shadow"></div>
-            </div>
+        <div class="slider-visible-area">
+          <div class="slider-vertical-image" onclick="showFun1()">
+            <div class="vertical-body"></div>
+            <div class="vertical-image" id="display-1"></div>
+            <div class="vertical-shadow"></div>
           </div>
-          <div class="horizontal-image" id="display-2"></div>
+          <div class="slider-horizontal-image" onclick="showFun2()">
+            <div class="transform-image">
+              <div class="horizontal-body">
+                <div class="horizontal-shadow"></div>
+              </div>
+            </div>
+            <div class="horizontal-image" id="display-2"></div>
+          </div>
         </div>
-        <div class="slider-left-button">
-          <img src="./assets/img/left.png" alt="Left Button" width="16" height="27">
+        <div class="slider-visible-area trinity">
+          <img src="./assets/img/trinity.png" alt="Iphone with shadows" width="517" height="513">
         </div>
-        <div class="slider-right-button">
-          <img src="./assets/img/right.png" alt="Right Button" width="16" height="27">
-        </div>
+      </div>
+      <div class="slider-right-button" id="right-button">
+        <img src="./assets/img/right.png" alt="Right Button" width="16" height="27">
       </div>
     </div>
     <section class="services-block" id="services-marker">
