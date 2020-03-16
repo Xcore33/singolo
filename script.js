@@ -42,15 +42,26 @@ function showFun2() {
 
 //form
 
-document.querySelector('.submit-form').addEventListener('click', (evt) => {
-  evt.preventDefault();
-  let subject = document.querySelector('#subject').value;
-  subject = subject === '' ? 'Without subject' : 'Subject: ' + subject;
-  let description = document.querySelector('#describe-area').value;
-  description = description === '' ? 'Without description' : 'Description: ' + description;
-  let message = 'The letter was sent \n'+subject+'\n'+description;
-  alert(message);
-})
+const email = document.getElementById("mail");
+
+email.addEventListener("input", function (event) {
+  if (email.validity.typeMismatch) {
+    email.setCustomValidity("I expect an e-mail");
+  }
+  else {
+    document.querySelector('.submit-form').addEventListener('click', (evt) => {
+    evt.preventDefault();
+    let subject = document.querySelector('#subject').value;
+    subject = subject === '' ? 'Without subject' : 'Subject: ' + subject;
+    let description = document.querySelector('#describe-area').value;
+    description = description === '' ? 'Without description' : 'Description: ' + description;
+    let message = 'The letter was sent \n'+subject+'\n'+description;
+    alert(message);
+    })
+   }
+});
+
+
 
 //sort picture
 
