@@ -44,13 +44,11 @@ function showFun2() {
 
 document.querySelector('.submit-form').addEventListener('click', (evt) => {
   evt.preventDefault();
-  let NAME = document.querySelector('#input-1-area').value;
-  NAME = NAME === '' ? 'No name' : 'Name: ' + NAME;
   let subject = document.querySelector('#subject').value;
-  subject = subject === '' ? 'No subject' : 'Subject: ' + subject;
+  subject = subject === '' ? 'Without subject' : 'Subject: ' + subject;
   let description = document.querySelector('#describe-area').value;
-  description = description === '' ? 'Empty' : 'Description: ' + description;
-  let message = 'Email sent \n'+NAME+'\n'+subject+'\n'+description;
+  description = description === '' ? 'Without description' : 'Description: ' + description;
+  let message = 'The letter was sent \n'+subject+'\n'+description;
   alert(message);
 })
 

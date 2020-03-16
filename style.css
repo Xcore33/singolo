@@ -191,6 +191,7 @@ body {
 
 .horizontal-shadow {
   position: absolute;
+  top: -26px;
   bottom: 0;
   z-index: -1;
 
