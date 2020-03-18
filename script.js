@@ -1,12 +1,6 @@
-const MENU = document.getElementById('menu');
 const BUTTONS = document.getElementById('porfolio-buttons');
 const IMAGES = document.getElementById('examples')
 var visible = true;
-
-MENU.addEventListener('click', (event) => {
-  MENU.querySelectorAll('a').forEach(el => el.classList.remove('active'));
-  event.target.classList.add('active');
-})
 
 BUTTONS.addEventListener('click', (event) => {
   BUTTONS.querySelectorAll('a').forEach(el => el.classList.remove('button-active'));
@@ -61,9 +55,6 @@ email.addEventListener("input", function (event) {
     })
    }
 });
-
-
-
 
 //sort picture
 
@@ -154,3 +145,24 @@ SLIDER.addEventListener('transitionend', function () {
 document.getElementById('left-button').addEventListener('click', pushLeft);
 document.getElementById('right-button').addEventListener('click', pushRight);
 carousel();
+
+//header scroll action
+
+document.addEventListener('scroll', onScroll);
+
+function onScroll(event) {
+  const CURRENTPOS = window.scrollY;
+  const SECTIONS = document.querySelectorAll('#slider-picture-box, #services-marker, #portfolio-marker, #about-marker, #contact-marker');
+  const LINKS = document.querySelectorAll('#menu a');
+
+  SECTIONS.forEach((el) => {
+    if (el.offsetTop <= CURRENTPOS && (el.offsetTop + el.offsetHeight) > CURRENTPOS) {
+      LINKS.forEach((a) => {
+       a.classList.remove('active');
+        if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+         a.classList.add('active');
+       }
+    })
+  }
+});
+}
