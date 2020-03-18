@@ -36,25 +36,32 @@ function showFun2() {
 
 //form
 
-const email = document.getElementById("mail");
-
-email.addEventListener("input", function (event) {
-  if (email.validity.typeMismatch) {
-    email.setCustomValidity("I expect an e-mail");
+function RESET() {
+  const email = document.getElementById("mail");
+  const login = document.getElementById("input-1-area");
+  if (login.value == '') {
+    return false;
   }
-  else {
-    document.querySelector('.submit-form').addEventListener('click', (evt) => {
-    evt.preventDefault();
+  if (!login.validity.valid) {
+    return false;
+  }
+  if (mail.value == '') {
+    return false;
+  }
+  if (email.validity.typeMismatch) {
+    return false;
+  }
+  if (login.value !== '' && mail.value !== '') {
     let subject = document.querySelector('#subject').value;
     subject = subject === '' ? 'Without subject' : 'Subject: ' + subject;
     let description = document.querySelector('#describe-area').value;
     description = description === '' ? 'Without description' : 'Description: ' + description;
     let message = 'The letter was sent \n'+subject+'\n'+description;
     alert(message);
+    event.preventDefault();
     document.myForm.reset();
-    })
-   }
-});
+  }
+}
 
 //sort picture
 

@@ -249,13 +249,13 @@
             <form id="describe-form" action="./" method="post" enctype="text/plain" name="myForm">
               <div class="form-4-row">
                 <input class="input-form-1" id="input-1-area" type="text" name="name" placeholder="Name (Required)"
-                  required pattern="^[A-Za-zА-Яа-яЁё\s]+$">
+                  required>
                 <input class="input-form-2" id="mail" type="email" name="mail" placeholder="Email (Required)" required>
                 <input class="input-form-3" id="subject" type="text" name="subject" placeholder="Subject">
                 <textarea class="describe-form" id="describe-area" form="describe-form"
                   placeholder="Describe your project in detail&hellip;"></textarea>
               </div>
-              <button class="submit-form">Submit</button>
+              <button class="submit-form" onclick="RESET()">Submit</button>
             </form>
           </div>
           <div class="form-container-contacts">
