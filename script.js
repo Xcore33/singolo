@@ -57,9 +57,11 @@ email.addEventListener("input", function (event) {
     description = description === '' ? 'Without description' : 'Description: ' + description;
     let message = 'The letter was sent \n'+subject+'\n'+description;
     alert(message);
+    document.myForm.reset();
     })
    }
 });
+
 
 
 
