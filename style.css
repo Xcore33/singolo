@@ -3,16 +3,15 @@
   padding: 0;
 }
 
-body {
-  font-family: "Lato", "Roboto", sans-serif;
-}
-
+body,
 html {
+  font-family: "Lato", "Roboto", sans-serif;
+
   scroll-behavior: smooth;
 }
 
-.content-wrapper {
-  width: 1020px;
+.position-container {
+  max-width: 1020px;
   margin: 0 auto;
 }
 
@@ -25,15 +24,19 @@ a.anchor {
   visibility: hidden;
 }
 
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1020px;
+  height: 89px;
+}
+
 .header {
   position: fixed;
   top: 0;
   z-index: 10;
 
-  display: flex;
-  justify-content: space-between;
-  width: 1020px;
-  height: 89px;
+  width: 100%;
 
   background-color: #2d303a;
   border-bottom: 6px solid #323746;
@@ -42,7 +45,7 @@ a.anchor {
 .header h1 {
   position: relative;
 
-  padding: 34px 0 0 38px;
+  padding: 34px 0 0 1.98vw;
 
   font-weight: 700;
   font-size: 25px;
@@ -74,7 +77,7 @@ a.anchor {
 .header-menu ul {
   display: flex;
   justify-content: space-between;
-  margin-right: 40px;
+  margin-right: 2.08vw;
 
   list-style-type: none;
 }
@@ -130,25 +133,32 @@ a.anchor {
 
 /* Slider Block */
 
-.slider-wrapper {
+.slider {
   position: relative;
 
-  width: 1020px;
+  width: 100%;
+  max-width: 1020px;
   height: 594px;
   overflow: hidden;
-}
 
-.slider {
   background-color: #f06c64;
   border-bottom: 6px solid #ea676b;
 
   transition: all ease 2s;
 }
 
-.slider-vertical-image {
+.slider-visible-area {
   position: absolute;
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.slider-vertical-image {
+  position: relative;
   top: 53px;
-  left: 112px;
+  left: 5.84vw;
 }
 
 .vertical-body {
@@ -187,7 +197,7 @@ a.anchor {
 .slider-horizontal-image {
   position: absolute;
   top: 174px;
-  left: 883px;
+  right: 7.1vw;
 }
 
 .transform-image {
@@ -237,7 +247,7 @@ a.anchor {
   z-index: 4;
 
   margin-top: 281px;
-  margin-left: 42px;
+  margin-left: 2.19vw;
 
   cursor: pointer;
 }
@@ -245,9 +255,8 @@ a.anchor {
 .slider-right-button {
   position: absolute;
   top: 281px;
+  right: 2.05vw;
   z-index: 4;
-
-  margin-left: 964px;
 
   cursor: pointer;
 }
