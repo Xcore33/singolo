@@ -159,11 +159,11 @@ document.addEventListener('scroll', onScroll);
 
 function onScroll(event) {
   const CURRENTPOS = window.scrollY;
-  const SECTIONS = document.querySelectorAll('#slider-picture-box, #services-marker, #portfolio-marker, #about-marker, #contact-marker');
+  const SECTIONS = document.querySelectorAll('#top, #services-marker, #portfolio-marker, #about-marker, #contact-marker');
   const LINKS = document.querySelectorAll('#menu a');
 
   SECTIONS.forEach((el) => {
-    if (el.offsetTop <= CURRENTPOS && (el.offsetTop + el.offsetHeight) > CURRENTPOS) {
+    if (el.offsetTop <= CURRENTPOS && (el.offsetTop + el.offsetHeight) > CURRENTPOS || (el.offsetTop - 150) < CURRENTPOS) {
       LINKS.forEach((a) => {
        a.classList.remove('active');
         if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {

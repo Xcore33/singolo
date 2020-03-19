@@ -16,6 +16,15 @@ html {
   margin: 0 auto;
 }
 
+a.anchor {
+  position: relative;
+  top: -95px;
+
+  display: block;
+
+  visibility: hidden;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -115,6 +124,7 @@ html {
 
 #wrapper {
   position: relative;
+
   margin-top: 95px;
 }
 
@@ -125,7 +135,6 @@ html {
 
   width: 1020px;
   height: 594px;
-
   overflow: hidden;
 }
 
