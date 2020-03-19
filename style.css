@@ -457,13 +457,12 @@ html {
   grid-template-columns: repeat(4, 240px);
 }
 
-/* .project-images:hover {
-  position: static;
+.project-images img:not(.image-active):hover {
+  width: 210px;
+  height: 177px;
 
-  color: #dedede;
-
-  border-color: #c5c5c5;
-} */
+  border: 5px dotted #f06c64;
+}
 
 .image-active {
   width: 210px;
