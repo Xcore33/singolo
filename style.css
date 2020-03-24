@@ -292,6 +292,7 @@ a.anchor {
 
 .services-wrapper {
   max-width: 1020px;
+  padding-bottom: 28px;
 }
 
 .services-block {
@@ -341,7 +342,7 @@ a.anchor {
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 940px;
-  margin: 47px 40px 28px 40px;
+  margin: 47px 40px 0 40px;
 }
 
 .item-container {
@@ -792,7 +793,7 @@ textarea:hover::placeholder {
 }
 
 .form-main p {
-  width: 300px;
+  min-width: 300px;
   padding-top: 10px;
 
   font-weight: 400;
@@ -1115,12 +1116,6 @@ footer .sb:hover {
     min-width: 768px;
   }
 
-  .form-container {
-    min-width: 442px;
-    max-width: 618px;
-    margin: 0 21px 0 40px;
-  }
-
   input,
   textarea {
     height: 38px;
@@ -1132,10 +1127,8 @@ footer .sb:hover {
     padding-bottom: 0;
   }
 
-  .form-container-contacts,
-  .form-main,
   .form-main p {
-    width: 221px;
+    min-width: 221px;
     padding-top: 0;
   }
 
@@ -1144,7 +1137,7 @@ footer .sb:hover {
   }
 
   footer {
-    width: 768px;
+    min-width: 768px;
     height: 76px;
   }
 }
