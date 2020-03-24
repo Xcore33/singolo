@@ -512,7 +512,7 @@ a.anchor {
   position: relative;
 
   max-width: 1020px;
-  padding: 68px 0 0 40px;
+  padding: 68px 0 45px 40px;
 
   text-align: justify;
 }
@@ -542,18 +542,26 @@ a.anchor {
   position: relative;
 
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 940px;
-  padding: 45px 0 0 0;
+  justify-content: center;
+  width: 100%;
+}
+
+.about-contacts-wrapper {
+  max-width: 1020px;
 }
 
 .about-contacts > div {
   box-sizing: border-box;
-  width: 31.916%;
-  margin: 0;
-  padding-bottom: 67px;
+  width: 29.41%;
+  margin-bottom: 67px;
+}
+
+.about-contacts > div:first-child {
+  margin-left: 40px;
+}
+
+.about-contacts > div:last-child {
+  margin-right: 40px;
 }
 
 h3 {
@@ -570,8 +578,6 @@ h3 {
 }
 
 .personal-info {
-  width: 300px;
-
   font-weight: 400;
   font-size: 12px;
   line-height: 21px;
@@ -1095,18 +1101,21 @@ footer .sb:hover {
     border-bottom: none;
   }
 
-  .about-main {
-    min-width: 688px;
-    margin-right: 60px;
-    padding: 52px 40px 0 40px;
-  }
-
-  .about-wrapper p {
-    min-width: 688px;
-  }
-
   .about-contacts-wrapper {
-    min-width: 688px;
+    min-width: 768px;
+  }
+
+
+  .about-contacts img {
+    width: 100%;
+    height: 28.5vw;
+    min-height: 219px;
+  }
+
+  .about-contacts > div {
+    min-width: 219px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
 
