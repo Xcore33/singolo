@@ -14,115 +14,124 @@
   <a class="anchor" id="top"></a>
   <div class="content-wrapper">
     <header class="header">
-      <h1>Singolo</h1>
-      <nav class="header-menu" id="navigation">
-        <ul class="header-menu-links" id="menu">
-          <li class="header-navigation-home" id="home"><a class="active" href="#top">HOME</a></li>
-          <li class="header-navigation" id="services"><a href="#services-marker">Services</a></li>
-          <li class="header-navigation" id="portfolio"><a href="#portfolio-marker">Portfolio</a></li>
-          <li class="header-navigation" id="about"><a href="#about-marker">About</a></li>
-          <li class="header-navigation" id="contact"><a href="#contact-marker">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="header-wrapper">
+        <h1>Singolo</h1>
+        <nav class="header-menu" id="navigation">
+          <ul class="header-menu-links" id="menu">
+            <li class="header-navigation-home" id="home"><a class="active" href="#top">HOME</a></li>
+            <li class="header-navigation" id="services"><a href="#services-marker">Services</a></li>
+            <li class="header-navigation" id="portfolio"><a href="#portfolio-marker">Portfolio</a></li>
+            <li class="header-navigation" id="about"><a href="#about-marker">About</a></li>
+            <li class="header-navigation" id="contact"><a href="#contact-marker">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
     <section class="general-content-wrapper" id="wrapper">
       <div class="slider" id="slider-picture-box">
-        <div class="slider-left-button" id="left-button">
-          <img src="./assets/img/left.png" alt="Left Button" width="16" height="27">
-        </div>
-        <div class="slider-wrapper" id="phones">
-          <div class="slider-visible-area">
-            <div class="slider-vertical-image">
-              <div class="vertical-body" onclick="showFun1()"></div>
-              <div class="vertical-image" id="display-1"></div>
-              <div class="vertical-shadow"></div>
-            </div>
-            <div class="slider-horizontal-image">
-              <div class="transform-image">
-                <div class="horizontal-body" onclick="showFun2()"></div>
-                <div class="horizontal-shadow"></div>
+        <div class="slider-wrapper">
+          <div class="slider-left-button" id="left-button">
+            <img src="./assets/img/left.png" alt="Left Button" width="16" height="27">
+          </div>
+          <div class="slider-box-wrapper" id="phones">
+            <div class="slider-visible-area">
+              <div class="slider-vertical-image">
+                <div class="vertical-body" onclick="showFun1()"></div>
+                <div class="vertical-image" id="display-1"></div>
+                <div class="vertical-shadow"></div>
               </div>
-              <div class="horizontal-image" id="display-2"></div>
+              <div class="slider-horizontal-image">
+                <div class="transform-image">
+                  <div class="horizontal-body" onclick="showFun2()"></div>
+                  <div class="horizontal-shadow"></div>
+                </div>
+                <div class="horizontal-image" id="display-2"></div>
+              </div>
+            </div>
+            <div class="slider-visible-area trinity">
+              <img src="./assets/img/trinity.png" alt="Iphone with shadows" width="100%">
             </div>
           </div>
-          <div class="slider-visible-area trinity">
-            <img src="./assets/img/trinity.png" alt="Iphone with shadows" width="100%">
+          <div class="slider-right-button" id="right-button">
+            <img src="./assets/img/right.png" alt="Right Button" width="16" height="27">
           </div>
-        </div>
-        <div class="slider-right-button" id="right-button">
-          <img src="./assets/img/right.png" alt="Right Button" width="16" height="27">
         </div>
       </div>
       <div class="services-block" id="services-marker">
-        <div class="services-title-container">
-          <h2>Our Services</h2>
-          <p class="services-block-text"> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
-            mollis,
-            non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac
-            cursus commodo, tortor mauris condimentum nibh.</p>
-        </div>
         <div class="services-wrapper">
-          <div class="item-container">
-            <img src="assets/img/pencil.png" alt="pencil-image" width="59" height="59">
-            <div class="item-box">
-              <p class="item-title">Custom Design</p>
-              <div class="item-description">
-                <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra <span>lacus ut,
-                    ultrices
-                    velit.</span></p>
+          <div class="services-title-container">
+            <h2>Our Services</h2>
+            <p class="services-block-text"> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
+              mollis,
+              non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac
+              cursus commodo, tortor mauris condimentum nibh.</p>
+          </div>
+          <div class="services-box-wrapper">
+            <div class="item-container">
+              <img src="assets/img/pencil.png" alt="pencil-image" width="59" height="59">
+              <div class="item-box">
+                <p class="item-title">Custom Design</p>
+                <div class="item-description">
+                  <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra <span>lacus ut,
+                      ultrices
+                      velit.</span></p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item-container">
-            <img src="assets/img/bulb.png" alt="bulb-image" width="59" height="59">
-            <div class="item-box">
-              <p class="item-title">Inovative Ideas</p>
-              <div class="item-description">
-                <p>Quisque luctus, quam eget molestie com- modo, lacus purus cursus purus, nec <span>rutrum tellus dolor
-                    id lorem.</span>
-                </p>
+            <div class="item-container">
+              <img src="assets/img/bulb.png" alt="bulb-image" width="59" height="59">
+              <div class="item-box">
+                <p class="item-title">Inovative Ideas</p>
+                <div class="item-description">
+                  <p>Quisque luctus, quam eget molestie com- modo, lacus purus cursus purus, nec <span>rutrum tellus
+                      dolor
+                      id lorem.</span>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item-container">
-            <img src="assets/img/heart.png" alt="heart-image" width="59" height="59">
-            <div class="item-box">
-              <p class="item-title third">Love Is The Answer</p>
-              <div class="item-description">
-                <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. <span>Quisque
-                    condimentum.</span></p>
+            <div class="item-container">
+              <img src="assets/img/heart.png" alt="heart-image" width="59" height="59">
+              <div class="item-box">
+                <p class="item-title third">Love Is The Answer</p>
+                <div class="item-description">
+                  <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
+                    <span>Quisque
+                      condimentum.</span></p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item-container">
-            <img src="assets/img/phone.png" alt="phone-image" width="59" height="59">
-            <div class="item-box">
-              <p class="item-title">Responsive Layout</p>
-              <div class="item-description">
-                <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae- <span>sent
-                    elit
-                    leo.</span></p>
+            <div class="item-container">
+              <img src="assets/img/phone.png" alt="phone-image" width="59" height="59">
+              <div class="item-box">
+                <p class="item-title">Responsive Layout</p>
+                <div class="item-description">
+                  <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae- <span>sent
+                      elit
+                      leo.</span></p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item-container">
-            <img src="assets/img/bubble.png" alt="bubble-image" width="59" height="59">
-            <div class="item-box">
-              <p class="item-title">24 / 7 Support</p>
-              <div class="item-description">
-                <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellen- <span>tesque
-                    egestas
-                    venenatis lorem .</span></p>
+            <div class="item-container">
+              <img src="assets/img/bubble.png" alt="bubble-image" width="59" height="59">
+              <div class="item-box">
+                <p class="item-title">24 / 7 Support</p>
+                <div class="item-description">
+                  <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellen- <span>tesque
+                      egestas
+                      venenatis lorem .</span></p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item-container">
-            <img src="assets/img/star.png" alt="star-image" width="59" height="59">
-            <div class="item-box">
-              <p class="item-title third">Feel Like A Star</p>
-              <div class="item-description">
-                <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae <span>aliquam
-                    tellus.</span></p>
+            <div class="item-container">
+              <img src="assets/img/star.png" alt="star-image" width="59" height="59">
+              <div class="item-box">
+                <p class="item-title third">Feel Like A Star</p>
+                <div class="item-description">
+                  <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae <span>aliquam
+                      tellus.</span></p>
+                </div>
               </div>
             </div>
           </div>
@@ -130,55 +139,57 @@
       </div>
 
       <div class="portfolio" id="portfolio-marker">
-        <div class="portfolio-logo">
-          <h2>Portfolio</h2>
-          <p class="portfolio-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio
-            sem
-            nec elit.</p>
-          <ul class="portfolio-menu" id="porfolio-buttons">
-            <li class="portfolio-navigation" id="all"><a href="#!">All</a></li>
-            <li class="portfolio-navigation" id="web-design"><a href="#!">Web Design</a></li>
-            <li class="portfolio-navigation" id="graphic-design"><a href="#!">Graphic Design</a></li>
-            <li class="portfolio-navigation" id="artwork"><a href="#!">Artwork</a></li>
-          </ul>
-        </div>
-        <div class="images-wrapper">
-          <div class="project" id="examples">
-            <div class="project-images">
-              <img src="./assets/img/boat.png" alt="Example project" width="220" height="187">
-            </div>
-            <div class="project-images">
-              <img src="./assets/img/girl.png" alt="Example project" width="220" height="187">
-            </div>
-            <div class="project-images">
-              <img src="./assets/img/night.png" alt="Example project" width="220" height="187">
-            </div>
-            <div class="project-images">
-              <img src="./assets/img/robot.png" alt="Example project" width="220" height="187">
-            </div>
-            <div class="project-images">
-              <img src="./assets/img/crowdani.png" alt="Example project" width="220" height="187">
-            </div>
-            <div class="project-images">
-              <img src="./assets/img/sdk.png" alt="Example project" width="220" height="187">
-            </div>
-            <div class="project-images">
-              <img src="./assets/img/crowd.png" alt="Example project" width="220" height="187">
-            </div>
-            <div class="project-images">
-              <img src="./assets/img/balloons.png" alt="Example project" width="220" height="187">
-            </div>
-            <div class="project-images">
-              <img src="./assets/img/mostrohb.png" alt="Example project" width="220" height="187">
-            </div>
-            <div class="project-images">
-              <img src="./assets/img/text.png" alt="Example project" width="220" height="187">
-            </div>
-            <div class="project-images">
-              <img src="./assets/img/monstro.png" alt="Example project" width="220" height="187">
-            </div>
-            <div class="project-images">
-              <img src="./assets/img/Project.png" alt="Example project" width="220" height="187">
+        <div class="portfolio-wrapper">
+          <div class="portfolio-logo">
+            <h2>Portfolio</h2>
+            <p class="portfolio-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio
+              sem
+              nec elit.</p>
+            <ul class="portfolio-menu" id="porfolio-buttons">
+              <li class="portfolio-navigation" id="all"><a href="#!">All</a></li>
+              <li class="portfolio-navigation" id="web-design"><a href="#!">Web Design</a></li>
+              <li class="portfolio-navigation" id="graphic-design"><a href="#!">Graphic Design</a></li>
+              <li class="portfolio-navigation" id="artwork"><a href="#!">Artwork</a></li>
+            </ul>
+          </div>
+          <div class="images-wrapper">
+            <div class="project" id="examples">
+              <div class="project-images">
+                <img src="./assets/img/boat.png" alt="Example project" width="220" height="187">
+              </div>
+              <div class="project-images">
+                <img src="./assets/img/girl.png" alt="Example project" width="220" height="187">
+              </div>
+              <div class="project-images">
+                <img src="./assets/img/night.png" alt="Example project" width="220" height="187">
+              </div>
+              <div class="project-images">
+                <img src="./assets/img/robot.png" alt="Example project" width="220" height="187">
+              </div>
+              <div class="project-images">
+                <img src="./assets/img/crowdani.png" alt="Example project" width="220" height="187">
+              </div>
+              <div class="project-images">
+                <img src="./assets/img/sdk.png" alt="Example project" width="220" height="187">
+              </div>
+              <div class="project-images">
+                <img src="./assets/img/crowd.png" alt="Example project" width="220" height="187">
+              </div>
+              <div class="project-images">
+                <img src="./assets/img/balloons.png" alt="Example project" width="220" height="187">
+              </div>
+              <div class="project-images">
+                <img src="./assets/img/mostrohb.png" alt="Example project" width="220" height="187">
+              </div>
+              <div class="project-images">
+                <img src="./assets/img/text.png" alt="Example project" width="220" height="187">
+              </div>
+              <div class="project-images">
+                <img src="./assets/img/monstro.png" alt="Example project" width="220" height="187">
+              </div>
+              <div class="project-images">
+                <img src="./assets/img/Project.png" alt="Example project" width="220" height="187">
+              </div>
             </div>
           </div>
         </div>
@@ -238,75 +249,77 @@
       </div>
 
       <div class="quote" id="contact-marker">
-        <div class="quote-logo">
-          <h2>Get a Quote</h2>
-          <p class="header-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
-            commodo luctus, nisi erat porttitor <span>ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac
-              cursus
-              commodo, tortor mauris condimentum nibh.</span></p>
-        </div>
-        <div class="form-wrapper">
-          <div class="form-container">
-            <form id="describe-form" action="./" method="post" enctype="text/plain" name="myForm">
-              <div class="form-4-row">
-                <input class="input-form-1" id="input-1-area" type="text" name="name" placeholder="Name (Required)"
-                  required>
-                <input class="input-form-2" id="mail" type="email" name="mail" placeholder="Email (Required)" required>
-                <input class="input-form-3" id="subject" type="text" name="subject" placeholder="Subject">
-                <textarea class="describe-form" id="describe-area" form="describe-form"
-                  placeholder="Describe your project in detail&hellip;"></textarea>
-              </div>
-              <button class="submit-form" onclick="RESET()">Submit</button>
-            </form>
+        <div class="quote-wrapper">
+          <div class="quote-logo">
+            <h2>Get a Quote</h2>
+            <p class="header-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
+              commodo luctus, nisi erat porttitor <span>ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac
+                cursus
+                commodo, tortor mauris condimentum nibh.</span></p>
           </div>
-          <div class="form-container-contacts">
-            <div class="form-main">
-              <h4>Contact Information</h4>
-              <p class="form-text">Quisque hendretit purus dapibus, ornare nibh vitae, viver- ra nibh. Fusce vitae
-                aliquam
-                tellus. Proin sit
-                amet volutpat <span>libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
-                  consequat
-                  felis.</span></p>
-              <div class="form-main-contacts">
-                <ul class="list-main-contacts">
-                  <li class="location-contacts">
-                    <a href="https://www.google.com/maps/@55.745655,37.499406,16z?hl=en-EN">
-                      <span class="ico ico-location"></span>
-                      <span class="ico-text text-location">Elm St. 14/05 Lost City</span>
-                    </a>
-                  </li>
-                  <li class="phone-contacts">
-                    <a href="tel:035283318635">
-                      <span class="ico ico-phone"></span>
-                      <span class="ico-text text-phone">03528 331 86 35</span>
-                    </a>
-                  </li>
-                  <li class="mail-contacts"><a href="mailto:info@singolo.com">
-                      <span class="ico ico-mail"></span>
-                      <span class="ico-text text-mail">info@singolo.com</span>
-                    </a>
-                  </li>
-                </ul>
+          <div class="form-wrapper">
+            <div class="form-container">
+              <form id="describe-form" action="./" method="post" enctype="text/plain" name="myForm">
+                <div class="form-4-row">
+                  <input class="input-form-1" id="input-1-area" type="text" name="name" placeholder="Name (Required)"
+                    required>
+                  <input class="input-form-2" id="mail" type="email" name="mail" placeholder="Email (Required)"
+                    required>
+                  <input class="input-form-3" id="subject" type="text" name="subject" placeholder="Subject">
+                  <textarea class="describe-form" id="describe-area" form="describe-form"
+                    placeholder="Describe your project in detail&hellip;"></textarea>
+                </div>
+                <button class="submit-form" onclick="RESET()">Submit</button>
+              </form>
+            </div>
+            <div class="form-container-contacts">
+              <div class="form-main">
+                <h4>Contact Information</h4>
+                <p class="form-text">Quisque hendretit purus dapibus, ornare nibh vitae, viver- ra nibh. Fusce vitae
+                  aliquam
+                  tellus. Proin sit
+                  amet volutpat <span>libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
+                    consequat
+                    felis.</span></p>
+                <div class="form-main-contacts">
+                  <ul class="list-main-contacts">
+                    <li class="location-contacts">
+                      <a href="https://www.google.com/maps/@55.745655,37.499406,16z?hl=en-EN">
+                        <span class="ico ico-location"></span>
+                        <span class="ico-text text-location">Elm St. 14/05 Lost City</span>
+                      </a>
+                    </li>
+                    <li class="phone-contacts">
+                      <a href="tel:035283318635">
+                        <span class="ico ico-phone"></span>
+                        <span class="ico-text text-phone">03528 331 86 35</span>
+                      </a>
+                    </li>
+                    <li class="mail-contacts"><a href="mailto:info@singolo.com">
+                        <span class="ico ico-mail"></span>
+                        <span class="ico-text text-mail">info@singolo.com</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </section>
 
     <footer class="footer">
-      <div class="footer-main">
+      <div class="footer-container">
         <h5><span>&copy;</span> Copyright 2013</h5>
+        <div class="sb-menu-footer" id="sb-footer">
+          <a class="sb facebook" href="https://www.facebook.com/" target="blanc"><span>Facebook</span></a>
+          <a class="sb google" href="https://google.com/" target="blanc"><span>Google</span></a>
+          <a class="sb twitter" id="footer-sb-twitter" href="https://twitter.com/"
+            target="blanc"><span>Twitter</span></a>
+          <a class="sb linkedin" href="https://www.linkedin.com/" target="blanc"><span>LinkedIn</span></a>
+        </div>
       </div>
-      <div class="sb-menu-footer" id="sb-footer">
-        <a class="sb facebook" href="https://www.facebook.com/" target="blanc"><span>Facebook</span></a>
-        <a class="sb google" href="https://google.com/" target="blanc"><span>Google</span></a>
-        <a class="sb twitter" id="footer-sb-twitter" href="https://twitter.com/" target="blanc"><span>Twitter</span></a>
-        <a class="sb linkedin" href="https://www.linkedin.com/" target="blanc"><span>LinkedIn</span></a>
-      </div>
-
     </footer>
 
   </div>
