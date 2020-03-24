@@ -292,13 +292,12 @@ a.anchor {
 
 .services-wrapper {
   max-width: 1020px;
-
 }
 
 .services-block {
   position: relative;
-  height: 100%;
 
+  height: 100%;
 
   font-family: "Lato", sans-serif;
 
@@ -309,7 +308,7 @@ a.anchor {
 .services-title-container {
   position: relative;
 
-  width: 940px;
+  max-width: 940px;
   margin-left: 40px;
 }
 
@@ -341,7 +340,7 @@ a.anchor {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 940px;
+  max-width: 940px;
   margin: 47px 40px 28px 40px;
 }
 
@@ -487,8 +486,9 @@ a.anchor {
 }
 
 .project-images img:not(.image-active):hover {
-  border: 5px dotted #f06c64;
   padding: 0;
+
+  border: 5px dotted #f06c64;
 }
 
 .image-active {
@@ -501,7 +501,6 @@ a.anchor {
 .about-container {
   position: relative;
 
-  width: 100%;
   height: 100%;
 
   background: #f2f2f2;
@@ -511,8 +510,10 @@ a.anchor {
 .about-wrapper {
   position: relative;
 
-  width: 1020px;
+  max-width: 1020px;
   padding: 68px 0 0 40px;
+
+  text-align: justify;
 }
 
 .about-wrapper h2 {
@@ -526,14 +527,13 @@ a.anchor {
   letter-spacing: -0.005em;
 }
 .about-wrapper p {
-  width: 940px;
   margin-top: 27px;
+  margin-right: 60px;
   margin-left: 20px;
 
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
-  text-align: justify;
   color: #767e9e;
 }
 
@@ -551,8 +551,8 @@ a.anchor {
 .about-contacts > div {
   box-sizing: border-box;
   width: 31.916%;
-  padding-bottom: 67px;
   margin: 0;
+  padding-bottom: 67px;
 }
 
 h3 {
@@ -646,7 +646,7 @@ h3 {
 }
 
 .quote-wrapper {
-  width: 1020px;
+  max-width: 1020px;
 }
 
 .quote-logo {
@@ -686,16 +686,19 @@ h3 {
   position: relative;
 
   display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
   flex-direction: row;
   justify-content: space-around;
-  width: 940px;
+  max-width: 1020px;
   padding: 34px 0 23px 0;
 }
 
 .form-container {
   flex-grow: 0;
   flex-shrink: 0;
-  width: 619px;
+  min-width: 619px;
+  margin: 0 21px 0 40px;
 }
 
 input,
@@ -772,9 +775,9 @@ textarea:hover::placeholder {
 
 /* Contacts information block */
 
-.form-container-contacts {
-  width: 321px;
-  padding-left: 21px;
+.form-main {
+  width: 300px;
+  margin-left: 0;
 
   color: #f0d8d9;
 }
@@ -927,18 +930,26 @@ footer .sb:hover {
   background-color: brown;
 }
 
-@media (max-width:768px) {
-  .content-wrapper {
-    width: 768px;
+@media (min-width:768px) and (max-width:1019px) {
+  * {
+    margin: 0 auto;
+    padding: 0;
   }
 
-  .header {
-    width: 768px;
-    height: 89px;
+  .content-wrapper {
+    min-width: 768px;
+  }
+
+  .header-wrapper {
+    min-width: 768px;
+  }
+
+  .slider {
+    width: 100%;
   }
 
   .slider-wrapper {
-    width: 768px;
+    min-width: 768px;
     height: 445.76px;
   }
   .slider-vertical-image {
@@ -1000,16 +1011,13 @@ footer .sb:hover {
 
   .slider-left-button {
     margin-top: calc(281px/1020*768);
-    margin-left: calc(42px/1020*768);
+    margin-left: 2.19vw;
   }
 
   .slider-right-button {
     top: calc(281px/1020*768);
-
-    margin-left: calc(964px/1020*768);
+    right: 2.05vw;
   }
-
-
 
   .trinity {
     top: calc(43px/1020*768);
@@ -1024,29 +1032,19 @@ footer .sb:hover {
   /* services */
 
   .services-block {
-    height: 674px;
+    height: 100%;
 
     border-bottom: none;
   }
 
   .services-title-container {
-    position: absolute;
-    /* left: 40px; */
-
-    width: 687px;
+    min-width: 688px;
+    margin: 0 40px 0 40px;
   }
 
   .services-wrapper {
-    position: absolute;
-    left: 40px;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: left;
-    width: 688px;
-    margin-top: 250px;
-    margin-left: 0;
+    min-width: 688px;
+    max-width: 1019px;
   }
 
   .item-container {
@@ -1055,9 +1053,6 @@ footer .sb:hover {
 
   /* portfolio */
 
-  .portfolio {
-    height: 1096px;
-  }
 
   .portfolio-logo p {
     padding-right: 20px;
@@ -1069,7 +1064,6 @@ footer .sb:hover {
   .project {
     width: 688px;
     height: 100%;
-    padding: 18px 0 0 40px;
 
     grid-auto-rows: 207px;
     grid-template-columns: repeat(3, 236px);
@@ -1093,31 +1087,26 @@ footer .sb:hover {
   /* about */
 
   .about-container {
-    max-width: 768px;
+    min-width: 768px;
     height: 100%;
 
     border-bottom: none;
   }
 
-  .about-wrapper {
-    width: 688px;
-    padding: 52px 0 0 40px;
+  .about-main {
+    min-width: 688px;
+    margin-right: 60px;
+    padding: 52px 40px 0 40px;
+  }
+
+  .about-wrapper p {
+    min-width: 688px;
   }
 
   .about-contacts-wrapper {
-    width: 688px;
-    padding: 45px 40px 75px 40px;
+    min-width: 688px;
   }
 
-  .personal-info,
-  .about-2 p {
-    width: 219px;
-  }
-
-  .about-contacts img {
-    width: 219px;
-    height: 219px;
-  }
 
   /* THIRD */
 
