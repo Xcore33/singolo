@@ -292,12 +292,13 @@ a.anchor {
 
 .services-wrapper {
   max-width: 1020px;
+
 }
 
 .services-block {
   position: relative;
+  height: 100%;
 
-  height: 494px;
 
   font-family: "Lato", sans-serif;
 
@@ -306,14 +307,14 @@ a.anchor {
 }
 
 .services-title-container {
-  position: absolute;
+  position: relative;
 
   width: 940px;
   margin-left: 40px;
 }
 
 .services-block h2 {
-  margin-top: 59px;
+  padding-top: 59px;
 
   font-weight: 900;
   font-size: 30px;
@@ -334,15 +335,14 @@ a.anchor {
 }
 
 .services-box-wrapper {
-  position: absolute;
+  position: relative;
 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 940px;
-  margin-top: 220px;
-  margin-left: 40px;
+  margin: 47px 40px 28px 40px;
 }
 
 .item-container {
@@ -473,35 +473,28 @@ a.anchor {
 
 /* Project Block */
 
-.images-wrapper {
-  position: relative;
-
-  padding: 18px 0 67px 0;
-}
-
 .project {
   display: grid;
-  width: 1020px;
-  height: 601px;
-  margin-left: 30px;
+  margin: 0 auto;
+  padding: 8px 30px 57px 30px;
 
   grid-auto-rows: 207px;
-  grid-template-columns: repeat(4, 240px);
+  grid-template-columns: repeat(4, 25%);
+}
+
+.project-images img:not(.image-active) {
+  padding: 10px;
 }
 
 .project-images img:not(.image-active):hover {
-  width: 210px;
-  height: 177px;
-
   border: 5px dotted #f06c64;
+  padding: 0;
 }
 
 .image-active {
-  width: 210px;
-  height: 177px;
-
   border: 5px solid #f06c64;
 }
+
 
 /* About Block */
 
@@ -551,12 +544,16 @@ a.anchor {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 964px;
+  max-width: 940px;
   padding: 45px 0 0 0;
 }
 
-
-
+.about-contacts > div {
+  box-sizing: border-box;
+  width: 31.916%;
+  padding-bottom: 67px;
+  margin: 0;
+}
 
 h3 {
   margin: 14px 0 10px 0;
@@ -587,37 +584,17 @@ h3 {
   word-spacing: 1.414px;
 }
 
-.about-2 p {
-  width: 301px;
-}
 
 .about-3 p {
   letter-spacing: 0.0025em;
   word-spacing: -0.18px;
 }
 
-
-
-.about-1,
-.about-2,
-.about-3 {
-  box-sizing: border-box;
-  width: calc(1/3*100% - (1 - 1/3)*20px);
-  padding-bottom: 67px;
-}
-
-.about-2,
-.about-1 h3,
-.about-3 h3 {
-  margin-left: -1px;
-}
-
 .sb-menu {
   margin-top: 8px;
 }
 
-#sb-1,
-#sb-2 {
+#sb-1 {
   margin-left: 1px;
 }
 
