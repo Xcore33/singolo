@@ -309,8 +309,9 @@ a.anchor {
 .services-title-container {
   position: relative;
 
-  max-width: 940px;
+  max-width: 1020px;
   margin-left: 40px;
+  margin-right: 40px;
 }
 
 .services-block h2 {
@@ -341,21 +342,25 @@ a.anchor {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 940px;
-  margin: 47px 40px 0 40px;
+  max-width: 1020px;
+  margin: 47px 0 0 0;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .item-container {
   box-sizing: border-box;
-  width: 300px;
-  margin: 0 0 -5px 1px;
+  width: 29.41%;
+  min-width: 300px;
+  margin: 0 0 32px 0;
 }
 
 .item-box {
   display: block;
   float: right;
-  width: 219px;
-  height: 128px;
+  width: 73%;
+  margin-left: 22px;
+  min-width: 217px;
 }
 
 .item-title {
@@ -697,7 +702,7 @@ h3 {
   flex-shrink: 0;
   flex-direction: row;
   max-width: 1020px;
-  margin: 34px 0 23px 0;
+  margin: 34px 0 10px 0;
 }
 
 .form-container {
@@ -760,12 +765,14 @@ textarea:hover::placeholder {
 }
 
 .form-container button {
-  width: 60px;
-  height: 25px;
+  width: 136px;
+  height: 38px;
 
-  color: #f48c8f;
+  color: #886A30;
+  font-size: 17px;
+  font-family: "Lato";
 
-  background-color: #d6564f;
+  background-color: #FBC65F;
   border: none;
   border-radius: 5px;
 }
@@ -1045,17 +1052,20 @@ footer .sb:hover {
     border-bottom: none;
   }
 
-  .services-title-container {
-    min-width: 688px;
-    margin: 0 40px 0 40px;
+  .item-container {
+    width: 45%;
+    min-width: 300px;
+    margin: 0 0 32px 0;
+    justify-content: left;
+  }
+
+  .item-container:nth-child(2n+1) {
+    margin-left: 20px;
   }
 
   .services-wrapper {
-    min-width: 688px;
+    min-width: 768px;
     max-width: 1019px;
-  }
-
-  .item-container {
     margin-right: 40px;
   }
 
@@ -1101,6 +1111,15 @@ footer .sb:hover {
     border-bottom: none;
   }
 
+  .form-container {
+  max-width: 619px;
+  width: 76.74%;
+  }
+
+  p.form-text {
+    line-height: 22px;
+  }
+
   .about-contacts-wrapper {
     min-width: 768px;
   }
@@ -1108,8 +1127,8 @@ footer .sb:hover {
 
   .about-contacts img {
     width: 100%;
-    height: 28.5vw;
-    min-height: 219px;
+    height: auto;
+    min-width: 219px;
   }
 
   .about-contacts > div {
