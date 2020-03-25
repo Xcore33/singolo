@@ -17,7 +17,7 @@ html {
 
 a.anchor {
   position: relative;
-  top: -89px;
+  top: -95px;
 
   display: block;
 
@@ -349,7 +349,7 @@ a.anchor {
 }
 
 .item-container {
- display: flex;
+  display: flex;
   width: 29.41%;
   min-width: 300px;
   margin: 0 0 32px 0;
@@ -949,7 +949,6 @@ footer .sb:hover {
 }
 
 @media (min-width:768px) and (max-width:1019px) {
-
   * {
     margin: 0 auto;
     padding: 0;
@@ -1073,11 +1072,11 @@ footer .sb:hover {
     margin-right: 40px;
   }
 
-   .item-box {
-     width: 71.062%;
-     min-width: 217px;
-     margin-left: 21px;
-   }
+  .item-box {
+    width: 71.062%;
+    min-width: 217px;
+    margin-left: 21px;
+  }
 
 
   /* portfolio */
@@ -1093,7 +1092,7 @@ footer .sb:hover {
   .project {
     display: grid;
     margin: 0 auto;
-    padding: 8px 30px 57px 30px;
+    padding: 8px 30px 66px 30px;
 
     grid-template-columns: repeat(3, 33.36%);
   }
@@ -1173,7 +1172,6 @@ footer .sb:hover {
 
 
 @media (min-width:320px) and (max-width:767px) {
-
   * {
     margin: 0 auto;
     padding: 0;
@@ -1188,7 +1186,7 @@ footer .sb:hover {
     visibility: hidden;
   }
 
- #wrapper {
+  #wrapper {
     margin-top: 71px;
   }
 
@@ -1213,11 +1211,12 @@ footer .sb:hover {
   }
 
   .header-wrapper > div {
-   align-self: center;
+    align-self: center;
   }
 
   .slider {
     width: 100%;
+
     border-bottom: 2.21px solid #ea676b;
   }
 
@@ -1314,7 +1313,7 @@ footer .sb:hover {
 
   .services-box-wrapper {
     margin: 37px 0 0 0;
-}
+  }
 
   .services-block {
     height: 100%;
@@ -1326,7 +1325,6 @@ footer .sb:hover {
     width: 100%;
     min-width: 245px;
     margin: 0 30px 32px 30px;
-
   }
 
   div.item-box {
@@ -1336,8 +1334,8 @@ footer .sb:hover {
   }
 
   div.services-box-wrapper {
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 
   .services-wrapper {
@@ -1355,7 +1353,7 @@ footer .sb:hover {
 
   .portfolio-logo {
     padding: 42px 30px 24px 30px;
-}
+  }
 
   .portfolio-logo p {
     padding-right: 0;
@@ -1368,9 +1366,9 @@ footer .sb:hover {
     display: grid;
     margin: 0 auto;
     padding: 18px 23.5px 42px 23.5px;
+    overflow: hidden;
 
     grid-template-columns: repeat(2, 50%);
-    overflow: hidden;
   }
 
   .project-images img {
@@ -1380,7 +1378,7 @@ footer .sb:hover {
 
   div.project-images {
     margin: 7px 6.5px 7px 6.5px;
-}
+  }
 
   /* about */
 
