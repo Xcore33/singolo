@@ -310,8 +310,8 @@ a.anchor {
   position: relative;
 
   max-width: 1020px;
-  margin-left: 40px;
   margin-right: 40px;
+  margin-left: 40px;
 }
 
 .services-block h2 {
@@ -359,8 +359,8 @@ a.anchor {
   display: block;
   float: right;
   width: 73%;
-  margin-left: 22px;
   min-width: 217px;
+  margin-left: 22px;
 }
 
 .item-title {
@@ -483,21 +483,24 @@ a.anchor {
   margin: 0 auto;
   padding: 8px 30px 57px 30px;
 
-  grid-auto-rows: 207px;
   grid-template-columns: repeat(4, 25%);
 }
 
-.project-images img:not(.image-active) {
-  padding: 10px;
+div.project-images {
+  margin: 10px 10px 7px 10px;
 }
 
 .project-images img:not(.image-active):hover {
-  padding: 0;
+  width: 94%;
+  height: auto;
 
   border: 5px dotted #f06c64;
 }
 
 .image-active {
+  width: 94%;
+  height: auto;
+
   border: 5px solid #f06c64;
 }
 
@@ -768,11 +771,11 @@ textarea:hover::placeholder {
   width: 136px;
   height: 38px;
 
-  color: #886A30;
   font-size: 17px;
   font-family: "Lato";
+  color: #886a30;
 
-  background-color: #FBC65F;
+  background-color: #fbc65f;
   border: none;
   border-radius: 5px;
 }
@@ -994,7 +997,7 @@ footer .sb:hover {
 
   .slider-horizontal-image {
     top: calc(174px/1020*768);
-    left: calc(883px/1020*768);
+    left: 86.4vw;
   }
 
 
@@ -1026,19 +1029,19 @@ footer .sb:hover {
 
   .slider-left-button {
     margin-top: calc(281px/1020*768);
-    margin-left: 2.19vw;
+    margin-left: 3.7vw;
   }
 
   .slider-right-button {
     top: calc(281px/1020*768);
-    right: 2.05vw;
+    right: 3.7vw;
   }
 
   .trinity {
     top: calc(43px/1020*768);
 
     width: calc(513px/1020*768);
-    margin-left: calc(252px/1020*768);
+    margin-left: 25vw;
 
     background-size: contain;
   }
@@ -1053,10 +1056,10 @@ footer .sb:hover {
   }
 
   .item-container {
+    justify-content: left;
     width: 45%;
     min-width: 300px;
     margin: 0 0 32px 0;
-    justify-content: left;
   }
 
   .item-container:nth-child(2n+1) {
@@ -1080,26 +1083,16 @@ footer .sb:hover {
   }
 
   .project {
-    width: 688px;
-    height: 100%;
+    display: grid;
+    margin: 0 auto;
+    padding: 8px 30px 57px 30px;
 
-    grid-auto-rows: 207px;
-    grid-template-columns: repeat(3, 236px);
+    grid-template-columns: repeat(3, 33.36%);
   }
 
   .project-images img {
-    width: 216.19px;
-    height: 183.76px;
-  }
-
-  .project-images img:not(.image-active):hover {
-    width: 206.19px;
-    height: 173.76px;
-  }
-
-  .image-active {
-    width: 206.19px;
-    height: 173.76px;
+    width: 100%;
+    height: auto;
   }
 
   /* about */
@@ -1112,8 +1105,8 @@ footer .sb:hover {
   }
 
   .form-container {
-  max-width: 619px;
-  width: 76.74%;
+    width: 76.74%;
+    max-width: 619px;
   }
 
   p.form-text {
@@ -1127,8 +1120,8 @@ footer .sb:hover {
 
   .about-contacts img {
     width: 100%;
-    height: auto;
     min-width: 219px;
+    height: auto;
   }
 
   .about-contacts > div {
