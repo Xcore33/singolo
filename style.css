@@ -1061,20 +1061,19 @@ footer .sb:hover {
 
   .services-block h2 {
     padding-top: 5.2vw;
+  }
 
-}
-
-.services-title-container {
-  margin-right: 5.2083vw;
-  margin-left: 5.2083vw;
-}
+  .services-title-container {
+    margin-right: 5.2083vw;
+    margin-left: 5.2083vw;
+  }
 
   .item-container {
     flex: 1 1 auto;
     justify-content: left;
     width: 43.5%;
     min-width: 300px;
-    margin: 0 0 4.167vw 0;
+    margin: 0 0 5.1vw 0;
   }
 
   .item-container > img {
@@ -1166,22 +1165,19 @@ footer .sb:hover {
 
   /* THIRD */
 
-  .quote {
-  border-bottom: 5px solid #ea676b;
-}
-
   .quote-logo {
     padding: 6.9vw 40px 0 40px;
-}
+  }
 
-.quote-logo p {
-  padding: 1.82vw 0 0 0;
-  line-height: 30px;
-}
+  .quote-logo p {
+    padding: 1.82vw 0 0 0;
 
-.quote-logo h2 {
-  line-height: 36px;
-}
+    line-height: 30px;
+  }
+
+  .quote-logo h2 {
+    line-height: 36px;
+  }
 
   .form-wrapper {
     min-width: 768px;
@@ -1190,7 +1186,7 @@ footer .sb:hover {
 
   .form-main {
     margin-right: 40px;
-}
+  }
 
   input,
   textarea {
@@ -1437,15 +1433,17 @@ footer .sb:hover {
   }
 
   .quote-logo {
-    padding: 50px 30px 0 30px;
+    padding: 44px 30px 0 30px;
   }
 
   .quote-logo h2 {
+    padding-bottom: 20px;
+
     line-height: 36px;
   }
 
   .quote-logo p {
-    line-height: 30px;
+    padding: 14px 0 10px 0;
   }
 
   .form-wrapper {
@@ -1475,20 +1473,28 @@ footer .sb:hover {
     width: 100%;
     margin-left: 0;
     padding-right: 30px;
+    padding-bottom: 10px;
   }
+
+  .form-main h4 {
+    padding-bottom: 6px;
+  }
+
   .form-container button {
     width: 100%;
+    height: 50px;
   }
 
 
   input,
   textarea {
     height: 38px;
-    margin-bottom: 9.25px;
+    margin-bottom: 12px;
+    padding-bottom: 0;
   }
 
   #describe-area {
-    height: 159px;
+    height: 149px;
     padding-bottom: 0;
   }
 
