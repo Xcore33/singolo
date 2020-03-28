@@ -205,6 +205,7 @@ FLOATMENU.addEventListener('click', (event) => {
         countOfClicks = (countOfClicks+1)%2;
         NAVBAR.classList.remove('float-menu');
         BURGER.classList.remove('active');
+        TINT.classList.remove('float-menu');
         document.addEventListener('scroll', onScroll);
     }  else {
         event.target.stopPropagation();
