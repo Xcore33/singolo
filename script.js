@@ -173,3 +173,40 @@ function onScroll(event) {
   }
 });
 }
+
+//float burger menu
+
+const BURGER = document.querySelector('.burger-menu');
+const NAVBAR = document.querySelector('.header-menu');
+const TINT = document.querySelector('.overlay-tint');
+let countOfClicks = 0;
+
+
+BURGER.addEventListener('click', (event) => {
+    countOfClicks = (countOfClicks+1)%2;
+    if (countOfClicks === 1) {
+        BURGER.classList.add('active');
+        NAVBAR.classList.add('float-menu');
+        TINT.classList.add('float-menu');
+        document.removeEventListener ('scroll', onScroll)
+
+    } else {
+        BURGER.classList.remove('active');
+        NAVBAR.classList.remove('float-menu');
+        TINT.classList.remove('float-menu');
+        document.addEventListener ('scroll', onScroll);
+    }
+});
+
+const FLOATMENU = document.querySelector('#menu');
+
+FLOATMENU.addEventListener('click', (event) => {
+    if (event.target.closest('ul li a')){
+        countOfClicks = (countOfClicks+1)%2;
+        NAVBAR.classList.remove('float-menu');
+        BURGER.classList.remove('active');
+        document.addEventListener('scroll', onScroll);
+    }  else {
+        event.target.stopPropagation();
+    }
+})
