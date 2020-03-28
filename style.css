@@ -504,15 +504,15 @@ div.project-images {
 }
 
 .project-images img:not(.image-active):hover {
-  width: 94%;
-  height: auto;
+  width: 210px;
+  height: 177px;
 
   border: 5px dotted #f06c64;
 }
 
 .image-active {
-  width: 94%;
-  height: auto;
+  width: 210px;
+  height: 177px;
 
   border: 5px solid #f06c64;
 }
@@ -1089,8 +1089,12 @@ footer .sb:hover {
     margin: 0 0 5.1vw 0;
   }
 
+  .item-container:nth-child(2n+1) {
+    margin-right: 2.524vw;
+  }
+
   .item-container > img {
-    margin-right: 21px;
+    margin-right: 2.734vw;
     margin-left: 0;
   }
 
@@ -1111,9 +1115,10 @@ footer .sb:hover {
   }
 
   .item-box {
-    width: 64%;
-    min-width: 217px;
+    width: 100%;
+    min-width: 220px;
     margin-left: 0;
+    padding-right: 4.377vw;
   }
 
 
@@ -1138,6 +1143,13 @@ footer .sb:hover {
   .project-images img {
     width: 100%;
     height: auto;
+  }
+
+  .project-images img.image-active {
+    width: 94.3%;
+    height: auto;
+
+    border: 5px solid #f06c64;
   }
 
   /* about */
@@ -1361,263 +1373,7 @@ footer .sb:hover {
     opacity: 0.6;
   }
 
-
-  /* services */
-
-  .services-block h2 {
-    padding-top: 24px;
-  }
-
-  .services-block-text {
-    margin-top: 13px;
-  }
-
-  .services-box-wrapper {
-    margin: 37px 0 0 0;
-  }
-
-  .services-block {
-    height: 100%;
-
-    border-bottom: none;
-  }
-
-  .item-container {
-    width: 100%;
-    min-width: 245px;
-    margin: 0 30px 32px 30px;
-  }
-
-  div.item-box {
-    width: 69.845%;
-    min-width: 162px;
-    margin-left: 21px;
-  }
-
-  div.services-box-wrapper {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  .services-wrapper {
-    min-width: 320px;
-    max-width: 767px;
-    padding-bottom: 0;
-  }
-
-
-  /* portfolio */
-
-  .portfolio {
-    border-bottom: none;
-  }
-
-  .portfolio-logo {
-    padding: 42px 30px 24px 30px;
-  }
-
-  .portfolio-logo p {
-    padding-right: 0;
-
-    text-align: justify;
-    white-space: normal;
-  }
-
-  .project {
-    display: grid;
-    max-height: 141.6vw;
-    margin: 0 auto;
-    padding: 18px 6.2668vw 42px 6.2668vw;
-    overflow: hidden;
-
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-  }
-
-  .portfolio-wrapper {
-    padding-bottom: 42px;
-  }
-
-  .project-images img {
-    width: 40.27vw;
-    height: auto;
-  }
-
-  div.project-images {
-    margin-top: 7px;
-    margin-right: auto;
-    margin-bottom: 7px;
-    margin-left: auto;
-  }
-
-  /* about */
-
-  .about-container {
-    min-width: 320px;
-    height: 100%;
-    padding-bottom: 20px;
-
-    border-bottom: none;
-  }
-
-  .about-wrapper {
-    position: relative;
-
-    max-width: 1020px;
-    padding: 25px 30px 45px 30px;
-
-    text-align: justify;
-  }
-
-  .about-wrapper h2 {
-    margin-left: 0;
-  }
-
-  .about-wrapper p {
-    margin-top: 27px;
-    margin-right: 0;
-    margin-left: 0;
-  }
-
-  .form-container {
-    width: 76.74%;
-  }
-
-  p.form-text {
-    line-height: 22px;
-  }
-
-  .about-contacts-wrapper {
-    min-width: 320px;
-    margin-left: 0;
-  }
-  .about-contacts {
-    flex-wrap: wrap;
-  }
-
-  .about-contacts img {
-    width: 100%;
-    height: auto;
-  }
-
-  .about-contacts > div {
-    width: 100%;
-    /* min-width: 315px; */
-    margin-right: 30px;
-    margin-bottom: 25px;
-    margin-left: 30px;
-  }
-
-  .about-contacts > div:first-child {
-    margin-left: 30px;
-  }
-
-  .about-contacts > div:last-child {
-    margin-right: 30px;
-  }
-
-
-  /* THIRD */
-
-  .quote {
-    border-bottom: none;
-  }
-
-  .quote-logo {
-    padding: 44px 30px 0 30px;
-  }
-
-  .quote-logo h2 {
-    padding-bottom: 20px;
-
-    line-height: 36px;
-  }
-
-  .quote-logo p {
-    padding: 14px 0 10px 0;
-  }
-
-  .form-wrapper {
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    min-width: 260px;
-    max-width: 767px;
-    height: 100%;
-    margin: 20px 30px 0 30px;
-    padding-bottom: 45px;
-  }
-
-  .form-container {
-    width: 100%;
-    margin: 0 0 0 0;
-  }
-
-  .form-main {
-    width: 100%;
-    /* height: 400px; */
-    padding-top: 35px;
-  }
-
-  .form-main p {
-    width: 100%;
-    margin-left: 0;
-    padding-right: 30px;
-    padding-bottom: 10px;
-  }
-
-  .form-main h4 {
-    padding-bottom: 6px;
-  }
-
-  .form-container button {
-    width: 100%;
-    height: 50px;
-  }
-
-
-  input,
-  textarea {
-    height: 38px;
-    margin-bottom: 12px;
-    padding-bottom: 0;
-  }
-
-  #describe-area {
-    height: 149px;
-    padding-bottom: 0;
-  }
-
-  .form-main p {
-    min-width: 221px;
-    padding-top: 0;
-  }
-
-  .list-main-contacts {
-    position: relative;
-
-    padding-top: 9px;
-  }
-
-  footer {
-    min-width: 320px;
-    height: 76px;
-  }
-  footer h5 {
-    display: none;
-  }
-
-  #sb-footer {
-    display: block;
-    align-self: center;
-    width: 157px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-@media (min-width:320px) and (max-width:767px) {
+  /* Slider */
   .slider {
     width: 100%;
 
@@ -1715,5 +1471,264 @@ footer .sb:hover {
     margin-left: 25vw;
 
     background-size: contain;
+  }
+
+  /* services */
+
+  .services-block h2 {
+    padding-top: 24px;
+  }
+
+  .services-block-text {
+    margin-top: 13px;
+  }
+
+  .services-box-wrapper {
+    margin: 37px 0 0 0;
+  }
+
+  .services-block {
+    height: 100%;
+
+    border-bottom: none;
+  }
+
+  .item-container {
+    width: 100%;
+    min-width: 245px;
+    margin: 0 8vw 32px 8vw;
+  }
+
+  div.item-box {
+    width: 69.845%;
+    min-width: 162px;
+    margin-left: 21px;
+  }
+
+  div.services-box-wrapper {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .services-wrapper {
+    min-width: 320px;
+    max-width: 767px;
+    padding-bottom: 0;
+  }
+
+
+  /* portfolio */
+
+  .portfolio {
+    border-bottom: none;
+  }
+
+  .portfolio-logo {
+    padding: 42px 30px 24px 30px;
+  }
+
+  .portfolio-logo p {
+    padding-right: 0;
+
+    text-align: justify;
+    white-space: normal;
+  }
+
+  .project {
+    display: grid;
+    max-height: 141.6vw;
+    margin: 0 auto;
+    padding: 18px 6.2668vw 42px 6.2668vw;
+    overflow: hidden;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .portfolio-wrapper {
+    padding-bottom: 42px;
+  }
+
+  .project-images img {
+    width: 40.27vw;
+    height: auto;
+  }
+
+  div.project-images {
+    margin-top: 7px;
+    margin-right: auto;
+    margin-bottom: 7px;
+    margin-left: auto;
+  }
+
+  .project-images img.image-active {
+    width: 37.6vw;
+    height: 31.558vw;
+
+    border: 5 solid #f06c64;
+  }
+
+  /* about */
+
+  .about-container {
+    min-width: 320px;
+    height: 100%;
+    padding-bottom: 20px;
+
+    border-bottom: none;
+  }
+
+  .about-wrapper {
+    position: relative;
+
+    max-width: 1020px;
+    padding: 25px 30px 45px 30px;
+
+    text-align: justify;
+  }
+
+  .about-wrapper h2 {
+    margin-left: 0;
+  }
+
+  .about-wrapper p {
+    margin-top: 27px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .form-container {
+    width: 76.74%;
+  }
+
+  p.form-text {
+    line-height: 22px;
+  }
+
+  .about-contacts-wrapper {
+    min-width: 320px;
+    margin-left: 0;
+  }
+  .about-contacts {
+    flex-wrap: wrap;
+  }
+
+  .about-contacts img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-contacts > div {
+    width: 100%;
+    margin-right: 30px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+  }
+
+  .about-contacts > div:first-child {
+    margin-left: 30px;
+  }
+
+  .about-contacts > div:last-child {
+    margin-right: 30px;
+  }
+
+
+  /* THIRD */
+
+  .quote {
+    border-bottom: none;
+  }
+
+  .quote-logo {
+    padding: 44px 30px 0 30px;
+  }
+
+  .quote-logo h2 {
+    padding-bottom: 20px;
+
+    line-height: 36px;
+  }
+
+  .quote-logo p {
+    padding: 14px 0 10px 0;
+  }
+
+  .form-wrapper {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    min-width: 260px;
+    max-width: 767px;
+    height: 100%;
+    margin: 20px 30px 0 30px;
+    padding-bottom: 45px;
+  }
+
+  .form-container {
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+
+  .form-main {
+    width: 100%;
+    padding-top: 35px;
+  }
+
+  .form-main p {
+    width: 100%;
+    margin-left: 0;
+    padding-right: 30px;
+    padding-bottom: 10px;
+  }
+
+  .form-main h4 {
+    padding-bottom: 6px;
+  }
+
+  .form-container button {
+    width: 100%;
+    height: 50px;
+  }
+
+
+  input,
+  textarea {
+    height: 38px;
+    margin-bottom: 12px;
+    padding-bottom: 0;
+  }
+
+  #describe-area {
+    height: 149px;
+    padding-bottom: 0;
+  }
+
+  .form-main p {
+    min-width: 221px;
+    padding-top: 0;
+  }
+
+  .list-main-contacts {
+    position: relative;
+
+    padding-top: 9px;
+  }
+
+  footer {
+    min-width: 320px;
+    height: 76px;
+  }
+  footer h5 {
+    display: none;
+  }
+
+  #sb-footer {
+    display: block;
+    align-self: center;
+    width: 157px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
