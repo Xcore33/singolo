@@ -129,8 +129,6 @@ a.anchor {
 }
 
 #menu a:not(.active):hover {
-  position: static;
-
   color: #f06c64;
 }
 
