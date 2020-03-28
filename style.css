@@ -1150,6 +1150,13 @@ footer .sb:hover {
     border: 5px solid #f06c64;
   }
 
+  .project-images img:not(.image-active):hover {
+    width: 94.3%;
+    height: auto;
+
+    border: 5px dotted #f06c64;
+  }
+
   /* about */
 
   .about-container {
@@ -1564,6 +1571,13 @@ footer .sb:hover {
     height: 31.558vw;
 
     border: 5 solid #f06c64;
+  }
+
+  .project-images img:not(.image-active):hover {
+    width: 40.27vw;
+    height: auto;
+
+    border: none;
   }
 
   /* about */
