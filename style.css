@@ -981,7 +981,9 @@ footer .sb:hover {
   }
   .slider-vertical-image {
     top: calc(53px/1020*768);
-    left: calc(112px/1020*768);
+    left: 11vw;
+
+    background-size: contain;
   }
 
   .vertical-body {
@@ -996,7 +998,8 @@ footer .sb:hover {
     width: calc(188px/1020*768);
     height: calc(333px/1020*768);
 
-    background-position: -14px -135px;
+    background-position: -10.54px -101.65px;
+    background-size: calc(580px/1020*768) calc(580px/1020*768);
   }
 
   .vertical-shadow {
@@ -1022,7 +1025,8 @@ footer .sb:hover {
     width: calc(333px/1020*768);
     height: calc(188px/1020*768);
 
-    background-position: -125px -119px;
+    background-position: -94.11px -89.6px;
+    background-size: calc(580px/1020*768) calc(580px/1020*768);
   }
 
   .horizontal-shadow {
@@ -1622,7 +1626,7 @@ footer .sb:hover {
   }
   .slider-vertical-image {
     top: calc(53px/1020*375);
-    left: calc(112px/1020*375);
+    left: 11vw;
   }
 
   .vertical-body {
@@ -1637,7 +1641,8 @@ footer .sb:hover {
     width: calc(188px/1020*375);
     height: calc(333px/1020*375);
 
-    background-position: -14px -135px;
+    background-position: -5.14px -49.63px;
+    background-size: calc(580px/1020*375) calc(580px/1020*375);
   }
 
   .vertical-shadow {
@@ -1663,7 +1668,8 @@ footer .sb:hover {
     width: calc(333px/1020*375);
     height: calc(188px/1020*375);
 
-    background-position: -125px -119px;
+    background-position: -45.95px -43.75px;
+    background-size: calc(580px/1020*375) calc(580px/1020*375);
   }
 
   .horizontal-shadow {
@@ -1730,7 +1736,8 @@ footer .sb:hover {
     width: calc(188px/1020*320);
     height: calc(333px/1020*320);
 
-    background-position: -14px -135px;
+    background-position: -4.39px -42.35px;
+    background-size: calc(580px/1020*320) calc(580px/1020*320);
   }
 
   .vertical-shadow {
@@ -1756,7 +1763,8 @@ footer .sb:hover {
     width: calc(333px/1020*320);
     height: calc(188px/1020*320);
 
-    background-position: -125px -119px;
+    background-position: -39.21px -37.33px;
+    background-size: calc(580px/1020*320) calc(580px/1020*320);
   }
 
   .horizontal-shadow {
@@ -1786,7 +1794,7 @@ footer .sb:hover {
   }
 
   .trinity {
-    top: calc(43px/1020*320);
+    top: calc(43px/1020*600);
 
     width: calc(513px/1020*320);
     margin-left: 25vw;
