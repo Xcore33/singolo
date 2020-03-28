@@ -124,7 +124,7 @@ a.anchor {
   width: 3px;
   height: 3px;
 
-  background-color: #404455;
+  background-color: #ffffff;
   border-radius: 50%;
 }
 
@@ -1332,7 +1332,7 @@ footer .sb:hover {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 4;
+    z-index: 8;
 
     display: block;
     width: 278px;
@@ -1364,7 +1364,7 @@ footer .sb:hover {
   }
 
   .overlay-tint {
-    z-index: 8;
+    z-index: 7;
 
     width: 100vw;
     height: 100%;
