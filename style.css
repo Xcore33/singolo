@@ -977,26 +977,28 @@ footer .sb:hover {
 
   .slider-wrapper {
     min-width: 768px;
-    height: 445.76px;
+    height: 58.236vw;
   }
   .slider-vertical-image {
-    top: calc(53px/1020*768);
-    left: 11vw;
+    top: 5.235vw;
+    left: 10.832vw;
 
     background-size: contain;
   }
 
   .vertical-body {
+    width: 21.141vw;
+
     background-repeat: no-repeat;
-    background-size: calc(100%/1020*768) auto;
+    background-size: contain;
   }
 
   .vertical-image {
-    top: calc(65px/1020*768);
-    left: calc(14px/1020*768);
+    top: 6.373vw;
+    left: 1.5vw;
 
-    width: calc(188px/1020*768);
-    height: calc(333px/1020*768);
+    width: 18.432vw;
+    height: 32.647vw;
 
     background-position: -10.54px -101.65px;
     background-size: calc(580px/1020*768) calc(580px/1020*768);
@@ -1004,56 +1006,58 @@ footer .sb:hover {
 
   .vertical-shadow {
     background-repeat: no-repeat;
-    background-size: calc(100%/1020*768) auto;
+    background-size: 23.53vw auto;
   }
 
   .slider-horizontal-image {
-    top: calc(174px/1020*768);
+    top: 17.059vw;
     left: 86.4vw;
   }
 
 
   .horizontal-body {
+    width: 21.141vw;
+
     background-repeat: no-repeat;
-    background-size: auto calc(100%/1020*768);
+    background-size: contain;
   }
 
   .horizontal-image {
-    top: calc(14px/1020*768);
-    right: calc(65px/1020*768);
+    top: 1.36vw;
+    right: 6.373vw;
 
-    width: calc(333px/1020*768);
-    height: calc(188px/1020*768);
+    width: 32.647vw;
+    height: 18.432vw;
 
     background-position: -94.11px -89.6px;
     background-size: calc(580px/1020*768) calc(580px/1020*768);
   }
 
   .horizontal-shadow {
-    top: calc(-26px/1020*768);
+    top: -2.549vw;
     bottom: 0;
 
-    width: calc(240px/1020*768);
-    height: calc(484px/1020*768);
+    width: 23.529vw;
+    height: calc(484vw/10.20);
 
     background-position-y: 1px;
     background-size: contain;
   }
 
   .slider-left-button {
-    margin-top: calc(281px/1020*768);
+    margin-top: calc(281vw/10.20);
     margin-left: 3.7vw;
   }
 
   .slider-right-button {
-    top: calc(281px/1020*768);
+    top: calc(281vw/10.20);
     right: 3.7vw;
   }
 
   .trinity {
-    top: calc(43px/1020*768);
+    top: calc(43vw/10.20);
 
-    width: calc(513px/1020*768);
+    width: calc(513vw/10.20);
     margin-left: 25vw;
 
     background-size: contain;
@@ -1613,7 +1617,7 @@ footer .sb:hover {
   }
 }
 
-@media (min-width:375px) and (max-width:767px) {
+@media (min-width:320px) and (max-width:767px) {
   .slider {
     width: 100%;
 
@@ -1622,24 +1626,24 @@ footer .sb:hover {
 
   .slider-wrapper {
     min-width: 320px;
-    height: 218.38px;
+    height: 58.235vw;
   }
   .slider-vertical-image {
-    top: calc(53px/1020*375);
+    top: calc(53vw/10.20);
     left: 11vw;
   }
 
   .vertical-body {
     background-repeat: no-repeat;
-    background-size: calc(100%/1020*375) auto;
+    background-size: 21.141vw auto;
   }
 
   .vertical-image {
-    top: calc(65px/1020*375);
-    left: calc(14px/1020*375);
+    top: calc(65vw/10.20);
+    left: calc(14vw/10.20);
 
-    width: calc(188px/1020*375);
-    height: calc(333px/1020*375);
+    width: calc(188vw/10.20);
+    height: calc(333vw/10.20);
 
     background-position: -5.14px -49.63px;
     background-size: calc(580px/1020*375) calc(580px/1020*375);
@@ -1647,156 +1651,67 @@ footer .sb:hover {
 
   .vertical-shadow {
     background-repeat: no-repeat;
-    background-size: calc(100%/1020*375) auto;
+    background-size: 23.53vw auto;
   }
 
   .slider-horizontal-image {
-    top: calc(174px/1020*375);
+    top: calc(174vw/10.20);
     left: 86.4vw;
   }
 
 
   .horizontal-body {
     background-repeat: no-repeat;
-    background-size: auto calc(100%/1020*375);
+    background-size: 21.141vw auto;
   }
 
   .horizontal-image {
-    top: calc(14px/1020*375);
-    right: calc(65px/1020*375);
+    top: calc(14vw/10.20);
+    right: calc(65vw/10.20);
 
-    width: calc(333px/1020*375);
-    height: calc(188px/1020*375);
+    width: calc(333vw/10.20);
+    height: calc(188vw/10.20);
 
     background-position: -45.95px -43.75px;
     background-size: calc(580px/1020*375) calc(580px/1020*375);
   }
 
   .horizontal-shadow {
-    top: calc(-26px/1020*375);
+    top: calc(-26vw/10.20);
     bottom: 0;
 
-    width: calc(240px/1020*375);
-    height: calc(484px/1020*375);
+    width: calc(240vw/10.20);
+    height: calc(484vw/10.20);
 
-    background-position-y: 1px;
     background-size: contain;
   }
 
   .slider-left-button {
-    width: 14.08px;
-    height: 24.9px;
-    margin-top: 98px;
-    margin-left: 2.9vw;
-  }
-
-  .slider-right-button {
-    top: 98px;
-    right: 2.9vw;
-
-    width: 14.08px;
-    height: 24.9px;
-  }
-
-  .trinity {
-    top: calc(43px/1020*375);
-
-    width: calc(513px/1020*375);
-    margin-left: 25vw;
+    margin-top: 26vw;
+    margin-left: 2.599vw;
 
     background-size: contain;
   }
-}
 
-@media (min-width:320px) and (max-width:374px) {
-  .slider {
-    width: 100%;
+  .slider-left-button img,
+  .slider-right-button img {
+    width: 3.76vw;
+    max-width: 16px;
+    height: 6.64vw;
+    max-height: 27px;
 
-    border-bottom: 2.21px solid #ea676b;
-  }
-
-  .slider-wrapper {
-    min-width: 320px;
-    height: 218.38px;
-  }
-  .slider-vertical-image {
-    top: calc(53px/1020*600);
-    left: calc(112px/1020*375);
-  }
-
-  .vertical-body {
-    background-repeat: no-repeat;
-    background-size: calc(100%/1020*320) auto;
-  }
-
-  .vertical-image {
-    top: calc(65px/1020*320);
-    left: calc(14px/1020*320);
-
-    width: calc(188px/1020*320);
-    height: calc(333px/1020*320);
-
-    background-position: -4.39px -42.35px;
-    background-size: calc(580px/1020*320) calc(580px/1020*320);
-  }
-
-  .vertical-shadow {
-    background-repeat: no-repeat;
-    background-size: calc(100%/1020*320) auto;
-  }
-
-  .slider-horizontal-image {
-    top: calc(174px/1020*420);
-    left: 86.4vw;
-  }
-
-
-  .horizontal-body {
-    background-repeat: no-repeat;
-    background-size: auto calc(100%/1020*320);
-  }
-
-  .horizontal-image {
-    top: calc(14px/1020*320);
-    right: calc(65px/1020*320);
-
-    width: calc(333px/1020*320);
-    height: calc(188px/1020*320);
-
-    background-position: -39.21px -37.33px;
-    background-size: calc(580px/1020*320) calc(580px/1020*320);
-  }
-
-  .horizontal-shadow {
-    top: calc(-26px/1020*320);
-    bottom: 0;
-
-    width: calc(240px/1020*320);
-    height: calc(484px/1020*320);
-
-    background-position-y: 1px;
     background-size: contain;
   }
 
-  .slider-left-button {
-    width: 14.08px;
-    height: 24.9px;
-    margin-top: 98px;
-    margin-left: 2.9vw;
-  }
-
   .slider-right-button {
-    top: 98px;
-    right: 2.9vw;
-
-    width: 14.08px;
-    height: 24.9px;
+    top: 26vw;
+    right: 2.599vw;
   }
 
   .trinity {
-    top: calc(43px/1020*600);
+    top: calc(43vw/10.20);
 
-    width: calc(513px/1020*320);
+    width: calc(513vw/10.20);
     margin-left: 25vw;
 
     background-size: contain;
